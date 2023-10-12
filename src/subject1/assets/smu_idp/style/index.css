@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: black;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -28,37 +31,25 @@ a:active {
   color: gray;
 }
 
-.container {
-  /* background-color: green; */
-  max-width: 1440px;
+.topNav {
+  background-color: black;
+  /* 나중에 줄일 것 */
+  /* min-height: 10px; */
+  /* max-width: 1440px; */
   margin-inline: auto;
-  padding-inline: 24px;
-}
-
-.wrapper {
-  /* background-color: blue; */
-  padding-block: 24px;
-}
-
-.nav .wrapper {
-  background-color: #070606;
+  padding: 24px 120px;
   display: flex;
   justify-content: space-between;
-  padding-block: 24px;
+  align-items: center;
 }
-
-.nav .nav__menuWrapper {
+.topNav__buttons {
   display: flex;
-  gap: 48px;
+  gap: 44px;
 }
-
-/* .nav {
-  font-weight: 400;
-  font-size: 24px;
-} */
-
-.nav__menu {
-  display: inline-block;
+.topNav__button {
+  color: white;
+  /* text-transform: capitalize; */
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   font-weight: 400;
   font-size: 24px;
   color: white;
@@ -69,12 +60,57 @@ a:active {
   }
 }
 
-header .logo {
-  position: relative;
-  max-width: 80px;
+.topNav__logo {
+  height: 28px;
 }
-.logo img {
-  width: 80%;
-  height: auto;
-  max-width: 100%;
-}
+
+/* .container {
+    background-color: green;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  } */
+
+/* .wrapper {
+    background-color: blue;
+    padding-block: 24px;
+  } */
+
+/* .nav .wrapper {
+    background-color: #070606;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 24px;
+  } */
+
+/* .nav .nav__menuWrapper {
+    display: flex;
+    gap: 48px;
+  } */
+
+/* .nav {
+    font-weight: 400;
+    font-size: 24px;
+  } */
+
+/* .nav__menu {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+  
+    &:hover {
+      background-color: unset;
+      color: #ff5c00;
+    }
+  } */
+
+/* header .logo {
+    position: relative;
+    max-width: 80px;
+  }
+  .logo img {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+  } */
