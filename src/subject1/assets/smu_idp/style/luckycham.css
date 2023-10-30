@@ -6,62 +6,67 @@
 body {
   background-color: black;
   color: white;
-  margin: 0;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-/* 가기전 */
 a:link {
   color: white;
 }
-/* 갔다온 */
+
 a:visited {
   color: white;
 }
-/* 마우스 위에 올라오면 */
+
 a:hover {
   color: #ff5c00;
 }
-/* 마우스 누르면 졸라 잠깐 보이는. */
+
 a:active {
   color: gray;
 }
 
-.topNav {
-  background-color: black;
-  /* 나중에 줄일 것 */
-  /* min-height: 10px; */
-  /* max-width: 1440px; */
+.container {
+  max-width: 1440px;
   margin-inline: auto;
-  padding: 24px 120px;
+  padding-inline: 24px;
+}
+
+.wrapper {
+  padding-block: 24px;
+}
+
+.nav .wrapper {
+  background-color: #070606;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: flex-start;
+  padding-block: 24px; */
 }
-.topNav__buttons {
+
+.nav .nav__menuWrapper {
   display: flex;
-  gap: 44px;
+  gap: 48px;
 }
-.topNav__button {
-  color: white;
-  /* text-transform: capitalize; */
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+
+.nav__menu {
+  display: inline-block;
   font-weight: 400;
   font-size: 24px;
   color: white;
-
-  &:hover {
-    background-color: unset;
-    color: #ff5c00;
-  }
 }
 
-.topNav__logo {
-  height: 28px;
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+  max-width: 100%;
 }
 
 #section2 .wrapper {
@@ -85,9 +90,16 @@ a:active {
   display: flex;
 }
 
-.centered-title {
+.title {
   margin-top: 84px;
   text-align: center;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
 }
